@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int m1,m2,m3,m4,m5;
+    int percent;
+    string name;
+    
+    cout<<"Enter student name : ";
+    cin>>name;
+    
+    cout<<"Enter marks for Subject1 : ";
+    cin>>m1;
+    cout<<"Enter marks for Subject2 : ";
+    cin>>m2;
+    cout<<"Enter marks for Subject3 : ";
+    cin>>m3;
+    cout<<"Enter marks for Subject4 : ";
+    cin>>m4;
+    cout<<"Enter marks for Subject5 : ";
+    cin>>m5;
+    
+    
+    cout<<"***** Marksheet *****"<<endl;
+    cout<<"Student Name : "<<name<<endl;
+    cout<<"Subject 1 : "<<m1<<endl;
+    cout<<"Subject 2 : "<<m2<<endl;
+    cout<<"Subject 3 : "<<m3<<endl;
+    cout<<"Subject 4 : "<<m4<<endl;
+    cout<<"Subject 5 : "<<m5<<endl;
+    
+    percent=(m1+m2+m3+m4+m5)/5;
+    
+    cout<<"Percentage : "<<percent<<endl;
+    
+    return 0;
+}
