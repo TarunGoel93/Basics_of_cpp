@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   int a,b;
+   char Operator;
+   
+   cout<<"Enter the first number : ";
+   cin>>a;
+   cout<<"Enter the second number : ";
+   cin>>b;
+   cout<<"Enter the bitwise Operator : ";
+   cin>>Operator;
+   
+   if(Operator=='&'){
+       cout<<"Bitwise AND : "<<(a&b)<<endl;
+   }
+   else if(Operator=='|'){
+       cout<<"Bitwise OR : "<<(a|b)<<endl;
+   }
+   else if(Operator=='^'){
+       cout<<"Bitwise XOR : "<<(a^b)<<endl;
+   }
+   else if(Operator=='~'){
+       cout<<"Bitwise NOT of A : "<<(~a)<<endl;
+       cout<<"Bitwise NOT of B : "<<(~b)<<endl;
+   }
+   
+ return 0;
+}
