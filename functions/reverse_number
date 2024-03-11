@@ -1,0 +1,28 @@
+#include<iostream>
+#include<cstring>
+#include<algorithm>
+
+using namespace std;
+
+string reverseNum(int n)
+{
+   string word=to_string(n);
+   int size=word.length();
+   for(int i=size;i>=0;i--){
+       cout<<word[i];
+   }
+};
+
+int main()
+{
+    
+    int x;
+    
+    cout<<"Enter the number : ";
+    cin>>x;
+    
+    cout<<"Reversed Number : "<<reverseNum(x)<<endl;
+    
+return 0;
+}
+
