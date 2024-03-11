@@ -1,0 +1,34 @@
+#include<iostream>
+#include<string>
+#include<algorithm>
+
+using namespace std;
+
+string num(int a){
+   string letter=to_string(a);
+   reverse(letter.begin(),letter.end());
+   return letter;
+}
+
+int main()
+{
+    int x;
+    
+    cout<<"Enter the number :";
+    cin>>x;
+    
+    string result=num(x);
+    
+    cout<<"The reversed number is: "<<result<<endl;
+    
+    string p=to_string(x);
+    
+    if(p==result){
+        cout<<"Entered number is a palindrome"<<endl;
+    }
+    else{
+        cout<<"Entered number is not a palindrome "<<endl;
+    }
+    
+return 0;
+    }
