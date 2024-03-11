@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+int add(int x,int y){
+    return x+y;
+}
+int sub(int x,int y){
+    return x-y;
+}
+int mul(int x,int y){
+    return x*y;
+}
+int divi(int x,int y){
+    if(y!=0){
+        return x/y;
+    }
+    else{
+        return '0';
+    }
+    
+}
+
+int main()
+{
+    
+    int a,b;
+    
+    cout<<"Enter the first number : ";
+    cin>>a;
+    cout<<"Enter the second number : ";
+    cin>>b;
+    
+    cout<<"The addition of "<<a<<" and "<<b<<" is : "<<add(a,b)<<endl;
+    cout<<"The subtraction of "<<a<<" and "<<b<<" is : "<<sub(a,b)<<endl;
+    cout<<"The multiplication of "<<a<<" and "<<b<<" is : "<<mul(a,b)<<endl;
+    cout<<"The division of "<<a<<" and "<<b<<" is : "<<divi(a,b)<<endl;
+    
+    return 0;
+}
