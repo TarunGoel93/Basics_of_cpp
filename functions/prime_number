@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int prime(int num,int ctr=0){
+    for(int i=1;i<=num;i++){
+        if(num%i==0){
+            ctr++;
+        }
+    }
+    if(ctr==2){
+        cout<<"Entered number is a prime number"<<endl;
+    }
+    else{
+        cout<<"Entered number is not a prime number"<<endl;
+    }
+};
+
+int main()
+{
+    int x;
+    
+    cout<<"Enter the number : ";
+    cin>>x;
+    
+    cout<<prime(x)<<endl;
+    
+}
