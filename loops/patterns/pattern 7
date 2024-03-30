@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    
+    // ***
+    // **
+    // *
+   
+   int x;
+   cout<<"Enter the number: ";
+   cin>>x;
+   
+   int rows=1;
+   while(rows<=x){
+       int columns=3;
+       while(columns>=rows){
+           cout<<"*";
+           columns--;
+       }
+       cout<<endl;
+       rows++;
+   }
+   
+}
