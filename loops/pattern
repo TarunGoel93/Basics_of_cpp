@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    /*
+    123
+    123
+    123
+     */
+     
+int x;
+cout<<"Enter the number: ";
+cin>>x;
+
+int i=1;
+while(i<=x){
+    int j=1;
+    while(j<=x){
+        cout<<j;
+        j++;
+    }
+    cout<<endl;
+    i++;
+}
+   
+}
