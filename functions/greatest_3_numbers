@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+string greaterNum(int a,int b,int c){
+    if(a>b && a>c){
+        return "a is greatest among b and c";
+    }
+    else if(b>a && b>c){
+        return "b is greatest among a and c";
+    }
+    else{
+        return "c is greatest among a and b";
+    }
+}
+
+int main()
+{
+    int x,y,z;
+    cout<<"Enter the three numbers: ";
+    cin>>x>>y>>z;
+    
+    cout<<greaterNum(x,y,z)<<endl;
+}
