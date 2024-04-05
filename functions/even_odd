@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+string even_odd(int num){
+    if(num%2==0){
+        return "Entered number is a even number";
+    }
+    else{
+        return "Entered number is a odd number";
+    }
+};
+
+int main()
+{
+    int a;
+    cout<<"Enter a number: ";
+    cin>>a;
+    
+    cout<<even_odd(a)<<endl;
+    
+return 0;
+}
