@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+
+
+class Circle{
+    private:
+    float radius,result1,result2,pie=3.14;
+    public:
+    void input(){
+        cout<<"Enter the radius of the circle: ";
+        cin>>radius;
+    }
+    void calculate(){
+        result1=pie*radius*radius;
+        result2=2*pie*radius;
+    }
+    void output(){
+        cout<<"The area of the circle is: "<<result1<<endl;
+        cout<<"The circumference of the circle is: "<<result2<<endl;
+    }
+    
+};
+
+int main()
+{
+    Circle c;
+    c.input();
+    c.calculate();
+    c.output();
+    
+return 0;
+}
