@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+class Rectangle{
+    private:
+    int length,width,result1,result2;
+    public:
+    void input(){
+        cout<<"Enter the length of the rectangle: ";
+        cin>>length;
+        cout<<"Enter the width of the rectangle: ";
+        cin>>width;
+    }
+    void calculate(){
+        result1=length*width;
+        result2=2*(length+width);
+    }
+    void output(){
+        cout<<"The area of the rectangle is: "<<result1<<endl;
+        cout<<"The perimeter of the rectangle is: "<<result2<<endl;
+    }
+};
+
+int main()
+{
+    Rectangle rect;
+    rect.input();
+    rect.calculate();
+    rect.output();
+    
+return 0;
+}
