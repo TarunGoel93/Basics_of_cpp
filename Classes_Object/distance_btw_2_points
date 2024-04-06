@@ -1,0 +1,38 @@
+//  Create a class Point to represent a point in 2D space. Implement member functions to calculate the distance between two points.
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+class Point{
+    private:
+    float x2,x1,y2,y1,result;
+
+    public:
+    void input(){
+        cout<<"Enter the value x2: ";
+        cin>>x2;
+        cout<<"Enter the value x1: ";
+        cin>>x1;
+        cout<<"Enter the value y2: ";
+        cin>>y2;
+        cout<<"Enter the value y1: ";
+        cin>>y1;
+    }
+    void calculate(){
+        result=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+    }
+    void output(){
+        cout<<"The distance betwen the points are: "<<result<<endl;
+    }
+};
+
+int main()
+{
+    Point p;
+    p.input();
+    p.calculate();
+    p.output();
+    
+return 0;
+}
